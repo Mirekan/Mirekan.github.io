@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/roboto');
 
 body {
-    background-color: #131316;
+    background-color: #3D3B40;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -27,12 +27,33 @@ section {
     filter: blur(0);
     transform: translateX(0);
 }
-.navbar ul, li {
-    list-style: none;
-}
 
+.navbar li {
+    list-style-type: none;
+    margin-top: 40%;
+    margin-left: -20%;
+}
 .navbar {
     position: fixed;
+    left: 2%;
     top: 30%;
     z-index: 1;
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 30px;
+    padding-left: 10px;
+    height: 25vh;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 0px;
+        align-items: center;
+    }
+    .navbar ul {
+    
+    }
 }
