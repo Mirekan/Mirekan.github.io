@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <div class="navbar">
+        <div>
+            
+            <ul>
+                <li><a onclick="scrollviewfirst()">Home</a></li>
+                <li><a onclick="scrollviewsecond()">About</a></li>
+                <li><a onclick="scrollviewthird()">Portfolio</a></li>
+
+            </ul>
+        </div>
+    </div>
 </head>
 <body>
-    <h1>hello world</h1>
+
+
+
+    <section class="hidden" id="first">
+        <div>
+            <h2>The First Section</h2>
+        </div>
+    </section>
+
+
+    <section class="hidden" id="second">
+        <div>
+            <h2>The Second Section</h2>
+        </div>
+    </section>
+
+    
+    <section class="hidden" id="third">
+        <div>
+            <h2>The Third Section</h2>
+        </div>
+    </section>
+
+    <script src="./src/app.js"></script>
+    <script src="./src/scroll.js"></script>
+    
+
 </body>
 </html>
