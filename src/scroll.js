@@ -3,7 +3,6 @@ const second = document.getElementById("second");
 const third = document.getElementById("third");
 
 
-
 const scrollviewfirst = () => {
     first.scrollIntoView();
 }
