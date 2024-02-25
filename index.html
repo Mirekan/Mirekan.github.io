@@ -3,49 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./style/style.css">
     <script src="https://kit.fontawesome.com/6a7e691908.js" crossorigin="anonymous"></script>
-    <div class="navbar">
-        <div>
-            
-            <ul>
-                <li><a onclick="scrollviewfirst()">Home</i></a></li>
-                <li><a onclick="scrollviewsecond()">About</i></a></li>
-                <li><a onclick="scrollviewthird()">Portfolio</a></li>
-
-            </ul>
-        </div>
-    </div>
 </head>
 <body>
 
+    <div class="container">
 
-
-    <section class="hidden" id="first">
-        <div>
-            <h2>The First Section</h2>
-        </div>
-    </section>
-    <br>
-
-    <section class="hidden" id="second">
-        <div>
-            <h2>The Second Section</h2>
-        </div>
-    </section>
-
-    <br>
+        <div class="row-flex">
+            <div class="container-content column-flex">
+                <img src="/assets/ade.jpeg" alt="">
+                <div>
+                    <div class="content-child">
+                        <div class="content-title">
+                            <h2>Hello, I'm Ade</h2>
+                        </div>
+                        <div class="content">
+                            <p>i'm a student in SMK N 2 Depok Sleman. My dream is to become a programmer, which is what i was doing till this day. Anyway, look at my work if you have a spare time.</p>
+                        </div>
+                    </div>
+                    <div class="foreshadow">
+                        <h4>My Works</h4>
+                    </div>
+                </div>
+                
+                
+            </div>
     
-    <section class="hidden" id="third">
-        <div>
-            <h2>The Third Section</h2>
-        </div>
-    </section>
+            <div class="sidebar">
+                <ul>
+                    <li><a href=""><i  class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
 
-    <script src="./src/app.js"></script>
+                </ul>
+                
+            </div>
+        </div>
+        
+    </div>
+
+   
+
     <script src="./src/scroll.js"></script>
+    <script src="/src/app.js"></script>
     
-
 </body>
 </html>

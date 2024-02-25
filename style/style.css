@@ -6,54 +6,69 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    max-height: 100vh;
 }
 
-section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
+.container {
+    display: column;
+    margin-left: 10%;
+    margin-top: 6%;
+    width: 80%;
+    height: 75vh;
 }
 
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+.upperbar {
+    display: flex;
+    margin-left: 5%;
+    width: 90%;
+    height: 6vh;
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
 }
 
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+.container-content {
+    display: flex;
+    margin-left: 5%;
+    width: 80%;
+    height: 68vh;
+    flex-direction: row;
+}
+.container-content>img{
+    width: 30vh;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.233) 20px 20px;
+}
+.sidebar {
+    display: block;
+    width: 5%;
+    height: 28vh;
+    background-color: rgba(0, 0, 0, 0.233);
+    box-shadow: rgba(255, 255, 255, 0.233) 10px 10px;
+}
+.content-child {
+    display: block;
+    width: 80%;
+    margin-left: 10vh;
+    padding: 1rem;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.233);
+    box-shadow: rgba(255, 255, 255, 0.24) 20px 20px;
+}
+.foreshadow {
+    margin-left: 10vh;
+    padding: 1rem;
 }
 
-.navbar li {
+.sidebar li {
     list-style-type: none;
-    margin-top: 40%;
-    margin-left: -20%;
+    margin-top: 0.7rem;
 }
-.navbar {
-    position: fixed;
-    left: 2%;
-    top: 30%;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.041);
-    padding: 30px;
-    padding-left: 10px;
-    height: 25vh;
-    border-radius: 8px;
+.sidebar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: -1.5rem;
 }
 
-@media screen and (max-width: 720px) {
-    .navbar {
-        left: 0;
-        top: 0;
-        height: 100%;
-        border-radius: 0px;
-        align-items: center;
-    }
-    .navbar ul {
-    
-    }
-}
