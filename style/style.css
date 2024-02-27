@@ -38,26 +38,15 @@ body {
 .container-content>img{
     width: 30vh;
     height: fit-content;
-    box-shadow: -1rem 0 3rem #000;
-    border-radius: 5px;
-}
-.container-content>img:hover{
-    animation: box-scale-animation 1s ease-in-out forwards;
+    box-shadow: rgba(0, 0, 0, 0.233) 20px 20px;
 }
 .sidebar {
     display: block;
     width: 5%;
     height: 28vh;
     background-color: rgba(0, 0, 0, 0.233);
-    box-shadow: -1rem 0 3rem #000;
-    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.233) 10px 10px;
 }
-
-.sidebar .fa-linkedin:hover, .fa-square-instagram:hover, .fa-square-github:hover, .fa-square-x-twitter:hover {
-    color: rgba(0, 0, 0, 0.8);
-    transition: all 0.5s;
-}
-
 .content-child {
     display: block;
     width: 80%;
@@ -65,12 +54,9 @@ body {
     padding: 1rem;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.233);
-    box-shadow: -1rem 0 3rem #000;
-    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.24) 20px 20px;
 }
 .foreshadow {
-    margin-top: 5vh;
-    width: 80%;
     margin-left: 10vh;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.233);
@@ -90,6 +76,7 @@ body {
     font-size: 25px;
     margin-left: -1.5rem;
 }
+
 
 .carousel {
     height: 30vh;
@@ -163,4 +150,5 @@ body {
         box-shadow: rgba(255, 255, 255, 0.24) 5px 5px;
     }
 }
+
 
